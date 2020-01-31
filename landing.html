@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Materialize</title>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="./formstyle.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+   <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <script>
+     $(document).ready(function(){
+       $('.sidenav').sidenav();
+       $('.parallax').parallax();
+       $('.materialbox').materialbox();
+       $('.tabs').tabs();
+       $('.datepicker').datepicker({
+         disableWeekends:true
+       });
+       $('.tooltipped').tooltip();
+       $('.scrollspy').scrollSpy();
+       $('select').formSelect();
+     })
+   </script>
+  </head>
+  <body id="land">
+    <div id="particles-js"></div> <!-- stats - count particles -->  <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
+<script type="text/javascript">
+particlesJS("particles-js", {
+particles: {
+  number: { value: 150, density: { enable: true, value_area: 800 } },
+  color: { value: "#ffffff" },
+  shape: {
+    type: "circle",
+    stroke: { width: 0, color: "#000000" },
+    polygon: { nb_sides: 3 },
+    image: { src: "img/github.svg", width: 50, height: 50 }
+  },
+  opacity: {
+    value: 0.5,
+    random: false,
+    anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false }
+  },
+  size: {
+    value: 2,
+    random: true,
+    anim: { enable: false, speed: 3, size_min: 0.1, sync: false }
+  },
+  line_linked: {
+    enable: true,
+    distance:110,
+    color: "#ffffff",
+    opacity: 0.4,
+    width: 1
+  },
+  move: {
+    enable: true,
+    speed: 2,
+    direction: "none",
+    random: false,
+    straight: false,
+    out_mode: "out",
+    bounce: false,
+    attract: { enable: false, rotateX: 600, rotateY: 1200 }
+  }
+},
+interactivity: {
+  detect_on: "canvas",
+  events: {
+    onhover: { enable: true, mode: "grab" },
+    onclick: { enable: true, mode: "bubble" },
+    resize: true
+  },
+  modes: {
+    grab: { distance: 300, line_linked: { opacity: 1 } },
+    bubble: { distance: 800, size: 4, duration: 1, opacity: 8, speed: 3 },
+    repulse: { distance: 200, duration: 0.4 },
+    push: { particles_nb: 4 },
+    remove: { particles_nb: 2 }
+  }
+},
+retina_detect: true
+});
+var count_particles, stats, update;
+stats = new Stats();
+stats.setMode(0);
+stats.domElement.style.position = "absolute";
+stats.domElement.style.left = "0px";
+stats.domElement.style.top = "0px";
+document.body.appendChild(stats.domElement);
+count_particles = document.querySelector(".js-count-particles");
+update = function() {
+stats.begin();
+stats.end();
+if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+  count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+}
+requestAnimationFrame(update);
+};
+requestAnimationFrame(update);
+
+</script>
+    <div class="main1">
+    <nav class="nav-wrapper transparent">
+        <a href="#" class="brand-logo" id="nav-logo"><i class="fas fa-code"></i> Dev Connector</a>
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#photos">Developers</a></li>
+          <li><a href="#services">Register</a></li>
+          <li><a href="#contact">Login</a></li>
+        </ul>
+    </nav>
+    <ul id="slide-out" class="sidenav" style="background-color:black;">
+        <li class="collection-item Si">
+          <i class="material-icons circle blue white-text" id="face">lock</i> Login
+        </li>
+        <li class="collection-item Si">
+          <i class="material-icons circle blue white-text" id="face">people</i> Developers
+        </li>
+        <li class="collection-item Si">
+          <i class="material-icons circle blue white-text" id="face" style="font-size:1.2rem">create</i> Register
+        </li>
+      </ul>
+      <div class="">
+           <div class="container SI center">
+             <h1 class="purple-text" style="">Developer Connector</h1>
+             <h5>Create a developer profile/portfolio, share posts and get help from other developers</h5>
+             <div style="margin-top:2%">
+               <button class="btn waves-effect waves-light purple darken-2" type="submit" name="action" >Login
+               </button>
+               <button class="btn waves-effect white black-text" type="submit" name="action" >Sign Up
+               </button>
+             </div></div>
+             </div>
+           </div>
+        </div>

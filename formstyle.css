@@ -1,3 +1,52 @@
+.loader {
+  position: absolute;
+  top: 40%;
+  left: 47%;
+}
+
+.login {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.btn-extended {
+  display: block;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: 1;
+}
+.main{
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.main1 .SI{
+  position: absolute;
+
+  bottom: 50%;
+  width: 100%;
+}
+#canvas{
+  position: relative;
+  height:1280px!important;
+  max-width: 100%;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+#land{
+  background-image: url('https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/img/demo-1-bg.jpg');
+}
 body{
   background-color: black;
   color:white!important;
@@ -8,11 +57,33 @@ body{
 #login-page {
    width: 500px;
 }
+.datepicker-day-button{
+  color:black!important;
+}
+.is-disabled{
+  color:red!important;
+}
 input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-default):focus:not([readonly])+label, input[type=password]:not(.browser-default):focus:not([readonly])+label, input[type=email]:not(.browser-default):focus:not([readonly])+label{
   color:white!important;
 }
-textarea.materialize-textarea{
+.input-field input[type]:focus, .materialize-textarea:focus:not([readonly]) {
+border-bottom: 1px solid white !important;
+box-shadow: 0 1px 0 0 white !important;
+}
+textarea.materialize-textarea:focus:not([readonly]){
   color:white!important;
+}
+textarea.materialize-textarea:focus:not([readonly])+label{
+  color:white!important;
+}
+.collapsible li{
+  color:black!important;
+}
+.cont {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
 }
 .card {
      position: absolute;
@@ -77,6 +148,16 @@ textarea.materialize-textarea{
     font-size:1.4rem;
   }
 }
+@media(max-width :425px){
+  .SI h1{
+    font-size: 2rem;
+  }
+  .SI h5{
+    font-size: 1rem;
+  }
+
+}
+
 @media (min-width: 1024px){
   #nav-logo{
     left:2%
@@ -93,4 +174,26 @@ label{
 }
 .Si{
   padding-left:5%!important
+}
+.collection li{
+  color: black!important;
+  border: none!important;
+}
+button:focus{
+  background-color: white!important;
+}
+ul.collection{
+  border:none!important;
+}
+.collapsible{
+  border:none!important;
+}
+.collapsible-header{
+  border-radius: 15px;
+}
+.collapsible-body{
+  background-color: white;
+}
+.my{
+  border-radius: 0!important;
 }
